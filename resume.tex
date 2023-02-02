@@ -3,11 +3,13 @@
 \usepackage{amssymb}
 \usepackage{titlesec}
 \usepackage{titling}
+\usepackage{ragged2e}
 \usepackage[margin=1in]{geometry}
+\usepackage{fontawesome}
 
-\titleformat{\section}{\filcenter\huge\bfseries\lowercase}{}{0em}{}[\titlerule]
+\titleformat{\section}{\filcenter\Large\bfseries\lowercase}{}{0em}{}[\titlerule]
 
-\titleformat{\subsection}[runin]{\bfseries}{$\gtrdot$ }{0em}{}
+\titleformat{\subsection}[runin]{\bfseries\large}{$\gtrdot$ }{0em}{}
 
 \titleformat{\subsubsection}[runin]{\bfseries}{$\gtrdot$ }{0em}{}
 
@@ -20,7 +22,7 @@
 
 \vspace{.25em}
 
-(570) 956-9205 -- benji6090@gmail.com -- https://github.com/benlloyd50
+{\faPhone{}}(570) 956-9205 $\vert$ {\faInbox{}}benji6090@gmail.com $\vert$ {\faGithub{}}/benlloyd50
 
 \end{center}
 }
@@ -33,38 +35,39 @@
 \maketitle
 
 \section{Education}
-\subsection{Kutztown University - Bachelor's in Computer Science} Jan '22 - May '23
+\subsubsection{Kutztown University - Bachelor's in Comp. Sci.} \hfill Jan '22 - May '23
 
-\subsection{Luzerne County Community College - Associate's in Computer Science} Aug '20 - Dec '21
+\subsubsection{Luzerne County Community College - Associate's in Comp. Sci.} \hfill Aug '20 - Dec '21
 
-\subsection{Penn State - 58 Credits} Aug '18 - Jan '20
+\subsubsection{Penn State - 58 Credits} \hfill Aug '18 - Jan '20
 
 \section{Job Experience}
-\subsection{Gateway Ticketing Systems - Software Developer} Aug '22 - Present
+\subsection{Software Developer - Gateway Ticketing Systems} \hfill Aug '22 - Present
+
 \begin{itemize}
-    \item Help develop an API back end for multiple internal and external systems, aided in design and implemented endpoints using C\# and Postman
+    \item Helped develop an API back end for multiple internal and external systems, aided in design and implemented endpoints using C\# and Postman
     \item Refactored a large internal tool to a newer version of C\# including developing an Excel importer/exporter and interconnected menus
     \item Collaborated with a team using Scrum and Agile methods to ensure unity across each other and to effectively spread work and address stucks
 \end{itemize}
 
-\subsection{Sheetz - Supervisor / Customer Service Associate} Jan '19 - Jun '20 $\boxplus$ Jan '22 - May '22
+\subsection{Supervisor/Customer Service Associate - Sheetz} \hfill Jan '19 - Jun '20 $\boxplus$ Jan '22 - May '22
 \begin{itemize}
   \item Managed a team up to 6 people and ensured a safe and effective work force
   \item Responsible for handling customer concerns and complaints regarding customer retention
 \end{itemize}
 
-\subsection{LCCC Tutoring - Math Tutor} Jan '21 - May '21
+\subsection{Math Tutor - LCCC Tutoring} \hfill Jan '21 - May '21
 \begin{itemize}
-  \item Tutored between 3 - 5 students during the semester
+  \item Tutored up to 5 students during the semester
   \item Enhanced student’s abilities by providing an effective teaching method that suited their learning style
   \item Researched unfamiliar subject matter to provide better assistance to students
 \end{itemize}
 
 \section{Technical Skills}
 
-\subsubsection{Programming Languages} Rust, Python, C\# + .NET, C++, JavaScript
+\subsubsection{Programming Languages} Rust, Python, C\# + .NET, C++, JavaScripthorizontal
 
-\subsubsection{Technologies} MySQL, SQLite, Windows/Linux, JMeter, {\LaTeX}, Visual Studio, Neovim
+\subsubsection{Technologies} MySQL, SQLite, Windows/Linux, JMeter, {\LaTeX}, Visual Studio, Neovim, Git
 
 \subsubsection{Communications} Agile Scrum, Kanban, Trello, MS Teams, MS Office, 98 WPM
 
@@ -75,5 +78,6 @@
   \item[Volunteer] Helped around a cat shelter cleaning, feeding, and nurturing the cats
 \end{itemize}
 
+\thispagestyle{empty}
 \end{document}
 
