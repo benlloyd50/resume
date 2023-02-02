@@ -1,53 +1,79 @@
-\documentclass{atricle}
+\documentclass{article}
+
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
+
+\titleformat{\section}{\filcenter\huge\bfseries\lowercase}{}{0em}{}[\titlerule]
+
+\titleformat{\subsection}[runin]{\bfseries}{$\gtrdot$ }{0em}{}
+
+\titleformat{\subsubsection}[runin]{\bfseries}{$\gtrdot$ }{0em}{}
+
+\titlespacing{\subsubsection}{0em}{0em}{.5em}
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\huge\bfseries
+\theauthor}
+
+\vspace{.25em}
+
+(570) 956-9205 -- benji6090@gmail.com -- https://github.com/benlloyd50
+
+\end{center}
+}
 
 \begin{document}
 \title{Resume}
+
 \author{Benjamin Lloyd}
 
 \maketitle
 
-\section{Technical Skills}
-
-\subsection{Programming Languages}
-Rust, Python, C# + .NET, C++, Javascript
-
-\subsection{Technologies}
-MySQL, SQLite, Windows/Linux systems, JMeter, {\LaTeX}, Visual Studio
-
-\section{General Skills}
-
-\subsection{Communications}
-Agile Scrum, Kanban, Trello, MS Teams, MS Office, 98 WPM
-
 \section{Education}
-Kutztown University - Bachelor's in Computer Science
-Jan '22 - May '23
+\subsection{Kutztown University - Bachelor's in Computer Science} Jan '22 - May '23
 
-Luzerne County Community College - Associate's in Computer Science
-Aug '20 - Dec '21
+\subsection{Luzerne County Community College - Associate's in Computer Science} Aug '20 - Dec '21
 
-Penn State - 58 Credits
-Aug '18 - Jan '20
+\subsection{Penn State - 58 Credits} Aug '18 - Jan '20
 
 \section{Job Experience}
-Gateway Ticketing Systems - Software Developer
-Aug '22 - May '23
-**Insert work desc here**
+\subsection{Gateway Ticketing Systems - Software Developer} Aug '22 - Present
+\begin{itemize}
+    \item Help develop an API back end for multiple internal and external systems, aided in design and implemented endpoints using C\# and Postman
+    \item Refactored a large internal tool to a newer version of C\# including developing an Excel importer/exporter and interconnected menus
+    \item Collaborated with a team using Scrum and Agile methods to ensure unity across each other and to effectively spread work and address stucks
+\end{itemize}
 
-Sheetz - Supervisor / Customer Service Associate
-Supervisor: Jan '19 - Jun '20 and CSA: Jan '22 - May '22
-**Insert work desc here**
+\subsection{Sheetz - Supervisor / Customer Service Associate} Jan '19 - Jun '20 $\boxplus$ Jan '22 - May '22
+\begin{itemize}
+  \item Managed a team up to 6 people and ensured a safe and effective work force
+  \item Responsible for handling customer concerns and complaints regarding customer retention
+\end{itemize}
 
-LCCC Tutoring - Math Tutor
-Jan '21 - May '21
-**Insert work desc here**
+\subsection{LCCC Tutoring - Math Tutor} Jan '21 - May '21
+\begin{itemize}
+  \item Tutored between 3 - 5 students during the semester
+  \item Enhanced student’s abilities by providing an effective teaching method that suited their learning style
+  \item Researched unfamiliar subject matter to provide better assistance to students
+\end{itemize}
 
-\section{Extra Curriculars}
-Youtube
-  Created educational content around learning programming langauages
-Game Development
-  Created games with a variety of technologies to explore unique programming challeneges
-Volunteer - Animal Shelter
-  Helped around a cat shelter
+\section{Technical Skills}
+
+\subsubsection{Programming Languages} Rust, Python, C\# + .NET, C++, JavaScript
+
+\subsubsection{Technologies} MySQL, SQLite, Windows/Linux, JMeter, {\LaTeX}, Visual Studio, Neovim
+
+\subsubsection{Communications} Agile Scrum, Kanban, Trello, MS Teams, MS Office, 98 WPM
+
+\section{Extracurriculars and Projects}
+\begin{itemize}
+  \item[YouTube] Created educational content around learning programming languages
+  \item[Game Development] Created games with a variety of technologies to explore unique programming challenges
+  \item[Volunteer] Helped around a cat shelter cleaning, feeding, and nurturing the cats
+\end{itemize}
 
 \end{document}
+
