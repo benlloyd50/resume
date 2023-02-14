@@ -12,13 +12,14 @@
 \titleformat{\subsection}[runin]{\bfseries\large}{$\gtrdot$ }{0em}{}
 
 \titleformat{\subsubsection}[runin]{\bfseries}{$\gtrdot$ }{0em}{}
-
 \titlespacing{\subsubsection}{0em}{0em}{.5em}
+
+\titleformat{\paragraph}[runin]{\small}{}{0em}{}
+\titlespacing{\paragraph}{0em}{0em}{.5em}
 
 \renewcommand{\maketitle}{
 \begin{center}
-{\huge\bfseries
-\theauthor}
+{\huge\bfseries\theauthor}
 
 \vspace{.25em}
 
@@ -35,28 +36,32 @@
 \maketitle
 
 \section{Education}
-\subsubsection{Kutztown University - Bachelor's in Comp. Sci.} \hfill Jan '22 - May '23
+\subsubsection{B.S. Computer Science | Kutztown University} \hfill Jan '22 - May '23
 
-\subsubsection{Luzerne County Community College - Associate's in Comp. Sci.} \hfill Aug '20 - Dec '21
+\subsubsection{A.S. Computer Science | Luzerne County Community College} \hfill Aug '20 - Dec '21
 
-\subsubsection{Penn State - 58 Credits} \hfill Aug '18 - Jan '20
+\subsubsection{58 Credits | Penn State} \hfill Aug '18 - Jan '20
 
 \section{Job Experience}
 \subsection{Software Developer - Gateway Ticketing Systems} \hfill Aug '22 - Present
+\paragraph{Gilbertsville, PA}
 
 \begin{itemize}
-    \item Developed an API back end for multiple internal and external systems, aided in design and implemented endpoints using C\# and Postman.
-    \item Refactored a large internal tool to a newer version of C\# including developing an Excel importer/exporter and a form-based UI system.
-    \item Collaborated with a team using Scrum and Agile methods to ensure unity across each other and to effectively spread work and address stucks.
+    \item Developing a RESTful API back end for multiple internal and external systems, aiding in design and implementing endpoints using C\# and Postman.
+    \item Refactoring a large internal tool to a newer version with C\# including developing an Excel importer/exporter and a form-based UI system.
+    \item Collaborating with a team using Scrum and Agile methods to ensure unity across each other, to effectively spread work and address stucks.
+    \item Testing software with JMeter to find load balancing issues and reporting findings to other teams for mitigation of loss from heavy loads.
 \end{itemize}
 
-\subsection{Supervisor/Customer Service Associate - Sheetz} \hfill Jan '19 - Jun '20 $\boxplus$ Jan '22 - May '22
+\subsection{Supervisor/Customer Service Associate - Sheetz} \hfill Jan '19 - May '22
+\paragraph{Shoemakersville, PA}
 \begin{itemize}
   \item Managed a team up to 6 people and ensured a safe and effective work force.
-  \item Responsible for handling customer concerns and complaints regarding customer retention.
+  \item Resolved customer concerns and complaints regarding customer retention.
 \end{itemize}
 
-\subsection{Math Tutor - LCCC Tutoring} \hfill Jan '21 - May '21
+\subsection{Math Tutor - Luzerne County Community College Tutoring} \hfill Jan '21 - May '21
+\paragraph{Nanticoke, PA}
 \begin{itemize}
   \item Tutored up to 5 students during the semester.
   \item Enhanced student’s abilities by providing an effective teaching method that suited their learning style.
@@ -65,7 +70,7 @@
 
 \section{Technical Skills}
 
-\subsubsection{Programming Languages} Rust, Python, C\# + .NET, C++, JavaScript
+\subsubsection{Programming Languages} Rust, Python, C\# + .NET, C++
 
 \subsubsection{Technologies} MySQL, SQLite, Windows/Linux, JMeter, {\LaTeX}, Visual Studio, Neovim, Git, MS Office
 
@@ -73,9 +78,8 @@
 
 \section{Extracurriculars and Projects}
 \begin{itemize}
-  \item[YouTube] Created educational content around learning programming languages.
-  \item[Game Dev.] Created games with a variety of technologies to explore unique programming challenges.
-  \item[Volunteer] A cat shelter cleaning, feeding, and nurturing the cats.
+  \item[\bfseries YouTube] Creating educational content around learning programming languages for beginners.
+  \item[\bfseries Game Dev.] Creating games with a variety of technologies to explore unique programming challenges. Participated in Game Jams to focus on scope management and finishing projects.
 \end{itemize}
 
 \thispagestyle{empty}
